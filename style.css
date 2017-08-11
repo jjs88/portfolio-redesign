@@ -134,7 +134,7 @@ ul {
 }*/
 
 .search input[type="text"] {
-    width:80%;
+    width:70%;
     background-color: transparent;
     border:transparent;
     border-bottom:2px solid white;
@@ -899,6 +899,10 @@ label[for="card-flip"]:hover > input + .card {
 }
 
 @media screen and (min-width:500px) {
+
+    .search input[type="text"] {
+        width:80%;
+    }
 
   .name-first,.name-last {
             font-size: 30px;
