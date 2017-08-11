@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Joshua Sadlon Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="normalizer.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://use.fontawesome.com/238f03f577.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+    
+        <div class="scroll-arrow-wrapper">
+            <i class="fa fa-arrow-circle-up fa-lg scroll-arrow" aria-hidden="true"></i>
+        </div>
+
+        <div class="modal">
+            <div class="modal-inner">
+                <span class="modal-exit"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
+                <p>Search Temporarily Disabled</p>
+                <div class="device-width"></div>
+            </div>    
+        </div>
+
+        <div class="sidebar-filter">
+
+        </div>
+    
+
+        <header class="nav">
+
+            <div class="sidebar">
+                <span id="menu-button-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
+                <ul class="sidebar-menu">
+                    <li><a href="#about">About</a></li
+                    ><li><a href="#projects">Projects</a></li
+                    ><li><a href="#skills">Skills</a></li
+                    ><li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!--hidden hamburger menu-->
+            <div class="menu-bar"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></div>   
+            <p class="name"> 
+                <span class="name-first">Josh</span>
+                <span class="name-last">Sadlon</span>
+            </p>
+
+            <nav class ="nav-inner">
+                <ul class="nav-menu">
+                    <li class="nav__item"><a href="#about">About</a></li>
+                    <li class="nav__item"><a href="#projects">Projects</a></li>
+                    <li class="nav__item"><a href="#skills">Skills</a></li>
+                    <li class="nav__item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input type="text" name="search_input" value="">
+                <span id="modal-toggle">
+                    <i class="fa fa-search" aria-hidden="true"></i> 
+                </span>
+                <div class="search-text">Search</div>
+            </div>
+        </header>  
+
+        <!--ABOUT-->
+        <section class="about">
+            <h1 id="about">About</h1>
+            <div id="intro">
+                <h3>Hello.</h3> 
+                <p>I am currently enrolled in Modern Developer aspiring to be a Front End Developer. 
+                    The journey has been fun and at the same time challenging. This page contains the 
+                    different projects I have worked on in the course so far and it will continue to grow 
+                    as I add more to the portfolio. You can find me in beautiful Denver, Colorado. I wish 
+                    to seek opportunities out here once I am through with the program. I grew up on the 
+                    East Coast so it will not be an easy task to pry me away from the mountains or go 
+                    anywhere else in the U.S. for that matter.
+                </p>  
+            </div>
+        </section>
+
+        <!--Skills-->
+        <section class="skills" id="skills">
+            <h3 class="skills-header">Front End Development</h3>
+            <p>Below is a graph of my core competencies with different front end technologies. 
+               Javascript is my strong point currently as I've put in a lot of work into it before 
+               the program. However, I am working diligently to improve my CSS3 skills. My portfolio 
+               and other projects have served as a testament to my skills increasing.
+            </p>
+
+            <div class="graph">
+                 <ul class="y-axis">
+                    <li class="y-axis__item">Expert</li>
+                    <li class="y-axis__item">Proficient</li>
+                    <li class="y-axis__item">Competent</li>
+                    <li class="y-axis__item">Learning</li>
+                </ul>
+                <ul class="x-axis">
+                    <li class="x-axis__item">
+                        <div class="bar-one">
+                            <div class="tooltip-one">
+                                I have been increasing my knowledge of JS over the past few years.
+                                <div class="bubble"></div>
+                            </div>
+                            <span class="bar-one-label">Javascript</span>
+                        </div>
+                    </li>
+                    <li class="x-axis__item">
+                        <div class="bar-two">
+                            <div class="tooltip-two">
+                                Exp with responsive design
+                                <div class="bubble"></div>
+                            </div>
+                            <span class="bar-two-label">HTML5/CSS</span>
+                        </div>
+                    </li>
+                    <li class="x-axis__item">
+                        <div class="bar-three">
+                            <div class="tooltip-three">
+                                Still learning
+                                <div class="bubble"></div>
+                            </div>
+                            <span class="bar-three-label">ReactJS</span>
+                        </div>
+                    </li>
+                    <li class="x-axis__item">
+                        <div class="bar-four">
+                            <div class="tooltip-four">
+                                Still learning
+                                <div class="bubble"></div>
+                            </div>
+                            <span class="bar-four-label">jQuery</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+            <!--Projects-->
+            <section class="projects" id="projects">
+                <h3 class="projects-header">Projects</h3>
+
+
+                <div class="projects-container">
+
+
+                    <!--put radio button selections at the top-->
+                    <input type="radio" name="project-selection" id="accordion-selection" checked>
+                    <input type="radio" name="project-selection" id="gallery-selection">
+                    <input type="radio" name="project-selection" id="tab-selection">
+                    <input type="radio" name="project-selection" id="card-selection">
+
+                    <ul class="project-nav-large">
+                        <li class="project-nav-large__item">
+                            <label class="project-selection" for="accordion-selection">Accordion</label>
+                        </li>
+                        <li class="project-nav-large__item">
+                            <label class="project-selection" for="tab-selection">Tab</label>
+                        </li>
+                        <li class="project-nav-large__item"> 
+                            <label class="project-selection" for="gallery-selection">Image Gallery</label>    
+                        </li>
+                        <li class="project-nav-large__item"> 
+                            <label class="project-selection" for="card-selection">Business Card</label>    
+                        </li>                        
+                    </ul>
+
+
+
+
+
+                    <!--project 1-->
+                    <label class="project-nav-small project-selection" for="accordion-selection">Accordion</label>
+                    <!--<input type="radio" name="project-selection" id="accordion-selection" checked>-->
+                    <div class="project-tab">
+                        <div class="carousel">
+                            <!--slide 1-->
+                            <input type="radio" name="acc" id="accordion-slide1" checked>
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="accordion-slide3" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="accordion-slide2" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/accordion-1-new.png" alt="">
+                            </div>
+                            <!--slide 2-->
+                            <input type="radio" name="acc" id="accordion-slide2">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="accordion-slide1" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="accordion-slide3" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/accordion-2-new.png" alt="">
+                            </div>
+                            <!--slide 3-->
+                            <input type="radio" name="acc" id="accordion-slide3">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="accordion-slide2" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="accordion-slide1" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/accordion-2-new.png" alt="">
+                            </div>
+                             <div class="carousel-circles">
+                                <i class="fa fa-circle circle-one" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-two" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-three" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h5 class="project-info__header">Technologies: HTML5 and CSS3 </h5>
+                            <p class="project-info__desc"> Carousel made with pure CSS3 and HTML. </p>
+                            <a class="project-info__link" href="#">Live Demo</a>
+                            <a class="project-info__link" href="#">Project Source <i class="fa fa-github" aria-hidden="true"></i> </a>
+                        </div>
+                
+                    </div>
+                    <!--Project 2-->
+                    <label class="project-nav-small project-selection" for="gallery-selection">Image Gallery</label>
+                    <!--<input type="radio" name="project-selection" id="gallery-selection">-->
+                    <div class="project-tab">
+                        <div class="carousel">
+                            <!--slide 1-->
+                            <input type="radio" name="gal" id="gallery-slide1" checked>
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="gallery-slide3" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="gallery-slide2" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/gallery-one.png" alt="">
+                            </div>
+                            <!--slide 2-->
+                            <input type="radio" name="gal" id="gallery-slide2">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="gallery-slide1" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="gallery-slide3" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/gallery-two.png" alt="">
+                            </div>
+                            <!--slide 3-->
+                            <input type="radio" name="gal" id="gallery-slide3">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="gallery-slide2" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="gallery-slide1" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/gallery-two.png" alt="">
+                            </div>
+                            <div class="carousel-circles">
+                                <i class="fa fa-circle circle-one" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-two" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-three" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h5 class="project-info__header">Technologies: HTML5 and CSS3 </h5>
+                            <p class="project-info__desc"> Carousel made with pure CSS3 and HTML. </p>
+                            <a class="project-info__link" href="#">Live Demo</a>
+                            <a class="project-info__link" href="#">Project Source <i class="fa fa-github" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                    <!--Project 3-->
+                    <label class="project-nav-small project-selection" for="tab-selection">Tab</label>
+                    <!--<input type="radio" name="project-selection" id="tab-selection">-->
+                    <div class="project-tab">
+                        <div class="carousel">
+                            <!--slide 1-->
+                            <input type="radio" name="tab" id="tab-slide1" checked>
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="tab-slide3" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="tab-slide2" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/tab-one-new.png" alt="">
+                            </div>
+                            <!--slide 2-->
+                            <input type="radio" name="tab" id="tab-slide2">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="tab-slide1" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="tab-slide3" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/tab-two-new.png" alt="">
+                            </div>
+                            <!--slide 3-->
+                            <input type="radio" name="tab" id="tab-slide3">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="tab-slide2" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="tab-slide1" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/tab-two-new.png" alt="">
+                            </div>
+                            <div class="carousel-circles">
+                                <i class="fa fa-circle circle-one" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-two" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-three" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h5 class="project-info__header">Technologies: HTML5 and CSS3 </h5>
+                            <p class="project-info__desc"> Tab Component made with pure HTML5 and CSS3. </p>
+                            <a class="project-info__link" href="#">Live Demo</a>
+                            <a class="project-info__link" href="#">Project Source <i class="fa fa-github" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                    <!--Project 4-->
+                    <label class="project-nav-small project-selection" for="card-selection">Business Card</label>
+                    <!--<input type="radio" name="project-selection" id="card-selection">-->
+                    <div class="project-tab">
+                        <div class="carousel">
+                            <!--slide 1-->
+                            <input type="radio" name="card" id="card-slide1" checked>
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="card-slide3" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="card-slide2" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/card-front.png" alt="">
+                            </div>
+                            <!--slide 2-->
+                            <input type="radio" name="card" id="card-slide2">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="tab-slide1" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="card-slide3" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/card-back.png" alt="">
+                            </div>
+                            <!--slide 3-->
+                            <input type="radio" name="card" id="card-slide3">
+                            <div class="slide">
+                                <div class="carousel-arrows">
+                                    <label for="card-slide2" class="prevArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </label>
+                                    <label for="card-slide1" class="nextArrow">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </label>                                
+                                </div>
+                                <img src="img/bus-card-two-new.png" alt="">
+                            </div>
+                            <div class="carousel-circles">
+                                <i class="fa fa-circle circle-one" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-two" aria-hidden="true"></i>
+                                <i class="fa fa-circle circle-three" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h5 class="project-info__header">Technologies: HTML5 and CSS3 </h5>
+                            <p class="project-info__desc"> 3D Business Card made with pure HTML5 and CSS3. </p>
+                            <a class="project-info__link" href="#">Live Demo</a>
+                            <a class="project-info__link" href="#">Project Source <i class="fa fa-github" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <!--end of projects container-->
+                </div>
+            </section>
+
+            <!--Contact-->
+            <section class="contact" id="contact" >
+                <h3 class="contact-header">Contact</h3>
+                
+                <div class="card-container">
+                    
+                    <label for="card-flip">
+                        <input type="checkbox" name="card-flip" id="card-flip">
+                        <div class="card">
+
+                            <div class="card-front">
+                                <h3 class="card-name">Josh Sadlon</h3>
+                                <h4 class="card-title">Front End Developer</h4>
+                                <p class="card-bio">Josh is currently enrolled in Bov Academy, a first of its kind programming academy that seeks to teach
+                                    aspiring developers all they need to know to become successful in their career.
+                                </p>                                
+                                <div class="card-contact">
+                                    <a class="card-contact__email" href="#">jsadlon1@gmail.com</a>
+                                    <a class="card-contact__site" href="#">joshuasadlon.com</a>
+                                </div>
+
+                                <div class="card-bottom-container">
+                                    <div class="encyclopedia-wrapper">
+                                        <img src="img/enc1.png" alt="#">
+                                        <div class="encyclopedia-inner-wrapper">
+                                            <p>Josh Sadlon</p>
+                                            <p>on</p>
+                                            <p>Encyclopedia MD</p>
+                                        </div>
+                                    </div>
+                                    <div class="social-media-icons">
+                                        <a href="#">
+                                            <img src="img/twitter.png" alt="#">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/github1.png" alt="#">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/facebook.png" alt="#">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/linkedin.png" alt="#">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>                
+
+                            <div class="card-back">
+                                <p class="card-back-name">Josh Sadlon</p>
+                            </div>        
+                        </div>
+                    </label>
+            
+                </div>
+            </section>
+
+            <!--Bottom bar-->
+           <footer>
+               <div class="footer-content">
+                   <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i></p>
+                   <p class="year">2017</p>
+                   <p class="footer-name">Joshua Sadlon</p>
+               </div>
+           </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
