@@ -142,6 +142,7 @@ ul {
 
  .search-text {
      position: absolute;
+     pointer-events: none;
      top:5px;
      -webkit-transition: ease-in .1s;
  }
@@ -226,8 +227,8 @@ ul {
     top:0;
     width:100%;
     height:100%;
-    background-color: black;
-    opacity:.8;
+    background-color: rgba(0,0,0,0.8);
+    /*opacity:.8;*/
     -webkit-transition: ease-in .3s;
 }
 
@@ -290,27 +291,16 @@ ul {
 /*about*/
  .about, .skills, .projects, .contact {
     color: #057968;
-    padding:5px;
 }
 
-.skills, .projects, .contact {
-    /*margin-top:20%;*/
-}
 
-.about {
-    /*background: url("img/bike-pic-one.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color:white;
-    padding:5px;*/
-    /*margin-top:15%;*/
-    
-}
+
 
 #about, .skills-header, .projects-header, .contact-header {
     text-align: center;
     font-size: 1.8rem;
     padding:5px;
+    margin-bottom:5%;
 }
 
 #intro, .skills, .projects {
@@ -318,14 +308,29 @@ ul {
     margin:0 auto;
     line-height: 2.4rem;
     font-size: 18px;
-    /*justify-content: flex-start;*/
-    /*flex-direction: column;*/
+}
+
+.about {
+    width:95%;
+    margin:0 auto;
+}
+
+.skills, .projects, .about {
+    margin: 15% auto;
+}
+
+
+
+.about, .skills, .projects, {
+        /*margin:20% auto 0 auto;*/
+        width:90%;
+        padding:10px;
 }
 
 
 .contact {
   width:98%;
-  margin:0 auto;  
+  margin:15% auto 15% auto;  
 }
 
 #intro h3 {
@@ -340,7 +345,7 @@ ul {
 
 #intro p, .skills p {
     font-size: 1rem;
-    padding:5px;
+    padding:10px;
 }
 
 /*skills*/
@@ -429,37 +434,39 @@ ul {
 }
 
 .tooltip-one, .tooltip-two, .tooltip-three, .tooltip-four {
+    background-color: #f2e5f2;
+    border-radius: 5px;
     position: absolute;
     line-height: 1rem;
     font-size: .9rem;
     margin:0;
-    padding:0;
+    padding:5px;
     display:none;
 }
 
 .tooltip-one {
-    width:12rem;
-    top:1.2rem;
-    left:.8rem;
+    width:11rem;
+    top:1rem;
+    left:.5rem;
 
 }
 
 .tooltip-two {
-    width:6rem;
-    top:3.8rem;
-    left:3.4rem;
+    width:8rem;
+    top:4.6rem;
+    left:3.1rem;
 }
 
 .tooltip-three {
     width:5rem;
-    top:8.8rem;
-    left:6rem;
+    top:8.6rem;
+    left:5.8rem;
 }
 
 .tooltip-four {
     width:5rem;
-    top:6.8rem;
-    left:8.6rem;
+    top:6.6rem;
+    left:8.4rem;
 }
 
 .bubble {
@@ -548,6 +555,7 @@ div[class^="bar"]:hover > div {
 
 .carousel {
     position: relative;
+    padding-top:15px;
     width:100%;
     height:210px; 
 }
@@ -579,6 +587,10 @@ div[class^="bar"]:hover > div {
     opacity: .7;
     cursor: pointer;
 }
+
+/*.prevArrow, .nextArrow {
+    padding:5px;
+}*/
 
 .prevArrow {
     float:left;
@@ -718,6 +730,7 @@ input[type="radio"], input[type="checkbox"] {
 .card {
     width:100%;
     height:100%;
+    /*padding:20px;*/
     position: absolute;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -725,6 +738,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .card-front {
+    /*padding:20px;*/
     background-image: url("img/bg1.png");
 }
 
@@ -740,9 +754,8 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .card-back {
-
+    /*padding:20px;*/
     background: url("img/bike-pic.jpg") no-repeat;
-
     background-size: 100%;
     background-repeat: no-repeat;
     /*background-position: center;*/
@@ -867,6 +880,12 @@ label[for="card-flip"]:hover > input + .card {
     .device-width:after {
         content:"Device width 600px to 1024px";
     }
+
+     .about {
+        margin-top:10%;
+        width:98%;
+    }
+
 }
 
 
@@ -933,6 +952,8 @@ label[for="card-flip"]:hover > input + .card {
     .project-tab {
         width:90%;
     }
+
+    
 }
 
 @media screen and (min-width:600px) {
@@ -988,6 +1009,9 @@ label[for="card-flip"]:hover > input + .card {
 
 @media screen and (min-width:800px) {
 
+    .prevArrow, .nextArrow {
+        padding:5px;
+    }
 
     .nav, .footer-content {
         background-color: #057968;
@@ -1105,6 +1129,7 @@ label[for="card-flip"]:hover > input + .card {
         left:10px;
         font-size: 1.4rem;
     }
+
 }
 
 @media screen and (min-width:1024px) {
@@ -1147,6 +1172,8 @@ label[for="card-flip"]:hover > input + .card {
     .project-tab {
         width:78%;
     }
+
+ 
 
 
 }
