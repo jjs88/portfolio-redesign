@@ -52,9 +52,8 @@
     // scroll arrow event
     window.addEventListener('scroll', function(e) {
 
-        // console.log(screen.width);
 
-        if(document.body.scrollTop > 100 && screen.width >= 800) {
+        if(document.scrollingElement.scrollTop > 100 && screen.width >= 800) {
             scrollArrowWrapper.style.display = 'block';
             scrollArrowWrapper.style.animationDuration = '2.3s';
             scrollArrowWrapper.style.animationName = 'test';
