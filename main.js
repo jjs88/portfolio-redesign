@@ -17,15 +17,25 @@
     modalToggle.addEventListener('click', function(e) {
 
         e.preventDefault();
-        modal.style.display = 'block';
-        modalInner.style.webkitTransform = "scale(1)";
+        // modal.style.display = 'block';
+        modal.style.visibility='visible';
+        // modalInner.style.webkitTransform = "scale(1)";
+
+        console.log('click');
+
+        if(modalInner.classList.contains('toggle-hidden')) {
+            modalInner.classList.remove('toggle-hidden');
+        }
 
     });
 
     modalExit.addEventListener('click', function(e) {
         
         e.preventDefault();    
-        modal.style.display = 'none';
+        modal.style.visibility = 'hidden';
+        if(!modalInner.classList.contains('toggle-hidden')) {
+            modalInner.classList.add('toggle-hidden');
+        }
     })
 
 
